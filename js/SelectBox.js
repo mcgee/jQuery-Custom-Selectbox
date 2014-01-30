@@ -185,6 +185,7 @@
 			if($selectedValue.html() != val) {
 				$selectedValue.html(_truncate(val));
 				cfg.changeCallback(cfg.selectbox.val());
+				cfg.selectbox.trigger('change');
 			}
 		}
 		
